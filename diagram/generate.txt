@@ -1,0 +1,32 @@
+Table "openfinance_produtos" {
+  "id_produto" int [pk, increment]
+  "tipo_investimento" varchar(255)
+  "risco" varchar(255)
+  "descricao" varchar(255)
+}
+
+Table "openfinance_bancos" {
+  "id_banco" int [pk, increment]
+  "descricao" varchar(255)
+  "codigo" varchar(10)
+}
+
+Table "quantumfinance_clientes" {
+  "id_cliente" int [pk, increment]
+  "customer_name" varchar(255)
+  "state" varchar(255)
+  "age" int
+  "gender" char(2)
+  "salary" decimal(18,2)
+  "total_invested" decimal(18,2)
+}
+
+Table "quantumfinance_cliente_produto" {
+  "id_cliente" int [pk]
+  "id_banco" int
+  "id_produto" int
+}
+
+Ref: quantumfinance_cliente_produto.id_banco < openfinance_bancos.id_banco
+Ref: quantumfinance_cliente_produto.id_cliente < quantumfinance_clientes.id_cliente
+Ref: quantumfinance_cliente_produto.id_produto < openfinance_produtos.id_produto

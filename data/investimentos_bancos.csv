@@ -1,0 +1,11 @@
+Tipo de Investimento,Risco,Descrição
+Poupança,Baixo risco,"Rendimento moderado, abaixo da inflação em muitos casos"
+CDB,Baixo para médio risco,"Rendimento superior à poupança, varia conforme o banco e prazo"
+RDB,Baixo para médio risco,"Semelhante ao CDB, com liquidez diária em algumas instituições"
+LCI/LCA,Baixo risco,"Isento de imposto de renda para pessoa física, rendimento varia"
+Fundos de Investimento,Variável,"Depende do tipo do fundo (renda fixa, ações, etc.)"
+Fundos de Renda Fixa,Baixo risco,"Investem em ativos de renda fixa, rendimento varia"
+Fundos de Ações,Alto risco,"Investem em ações, rendimento varia com o mercado"
+Fundos DI,Baixo risco,"Acompanham a taxa DI, para investimentos de curto prazo"
+ETFs,Variável,"Permite investimento em uma cesta de ativos, negociados em bolsa"
+Previdência Privada,Variável,"Planejamento de longo prazo, opções conforme o perfil"
